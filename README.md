@@ -2,24 +2,29 @@
 
 Public Cursor skill for **local business marketing websites** (Next.js landing pages).
 
-**Source of truth:** this repo (`emist3r/local-web-design-skill`).  
-Also used inside the private Studyabroad studio (vendored copy).
+## Where it lives publicly
 
-Pairs with [EMIST3R/skills](https://github.com/EMIST3R/skills) (`emil-design-eng`, `mobile-native`, etc.).
+**Primary (live now):**  
+https://github.com/EMIST3R/skills/tree/main/skills/local-web-design
 
-## Install into a project
+```bash
+npx skills@latest add EMIST3R/skills
+```
+
+This folder is the same skill packaged as a dedicated repo (`emist3r/local-web-design-skill`) for one-skill installs.
+
+## Install only this skill into a project
 
 ```bash
 mkdir -p .cursor/skills
-git clone --depth 1 https://github.com/emist3r/local-web-design-skill.git /tmp/lwds
-cp -R /tmp/lwds/.cursor/skills/local-web-design .cursor/skills/
+git clone --depth 1 https://github.com/EMIST3R/skills.git /tmp/emist3r-skills
+cp -R /tmp/emist3r-skills/skills/local-web-design .cursor/skills/
 ```
 
-Or personal (all projects):
+Or clone this dedicated repo once it exists on GitHub, then:
 
 ```bash
-mkdir -p ~/.cursor/skills
-cp -R /tmp/lwds/.cursor/skills/local-web-design ~/.cursor/skills/
+cp -R .cursor/skills/local-web-design /path/to/project/.cursor/skills/
 ```
 
 ## What it enforces
